@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>dwmpybeads</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; }
+    .gradient-bg {
+      background: linear-gradient(to bottom right, #fce4ec, #e0f7fa);
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hover-bounce:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+ .gallery-img {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+
+  .gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .gallery-img.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  </style>
+</head>
+<body class="bg-pink-50 text-gray-700">
+
+  <section class="gradient-bg p-10 text-center rounded-b-3xl shadow-lg fade-in">
+    <h1 class="text-5xl font-extrabold text-pink-700 tracking-wide animate-bounce">dwmpybeads</h1>
+    <p class="text-xl mt-2 text-pink-600 italic">Custom Beaded Bracelets to Match Your Vibe</p>
+    <!-- <div class="mt-8">
+      <img src="ero.jpg" alt="Hero" class="mx-auto rounded-3xl shadow-xl w-full max-w-md hover:scale-105 transition-transform duration-300">
+    </div> -->
+  </section>
+
+  <section class="py-14 px-4 text-center fade-in">
+    <h2 class="text-3xl font-bold text-pink-700">Gelang Aksesoris Unik Buat Kamu yang Spesial</h2>
+    <p class="mt-4 text-pink-500 max-w-2xl mx-auto">Gelang buatan tangan yang bisa dicustom sesuai dengan karakter kamu.
+        Hadiah yang tepat untuk sahabat, pasangan, atau diri sendiri.</p>
+  </section>
+
+  <section class="bg-pink-100 py-14 px-6 fade-in">
+    <h3 class="text-center text-2xl font-semibold text-pink-600 mb-8">Produk Kami</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <div class="bg-white rounded-2xl p-5 shadow-lg hover:shadow-2xl hover-bounce transition">
+        <img src="assets/s2.jpg" alt="Gelang" class="rounded-xl mb-3">
+        <h4 class="text-xl font-semibold text-pink-700">Gelang</h4>
+        <p class="text-sm text-pink-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ipsa.</p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-lg hover:shadow-2xl hover-bounce transition">
+        <img src="assets/s3.jpg" alt="Gelang" class="rounded-xl mb-3">
+        <h4 class="text-xl font-semibold text-pink-700">Gelang</h4>
+        <p class="text-sm text-pink-500">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, architecto?</p>
+      </div>
+      <div class="bg-white rounded-2xl p-5 shadow-lg hover:shadow-2xl hover-bounce transition">
+        <img src="assets/s1.jpg" alt="Gelang" class="rounded-xl mb-3">
+        <h4 class="text-xl font-semibold text-pink-700">Gelang</h4>
+        <p class="text-sm text-pink-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, eum?</p>
+      </div>
+    </div>
+  </section>
+
+<section class="py-14 px-6 bg-white">
+  <h3 class="text-center text-2xl font-semibold text-pink-600 mb-8">Galeri Produk</h3>
+  <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 max-w-5xl mx-auto">
+    <img src="assets/s1.jpg" alt="Gallery Image 1" class="gallery-img">
+    <img src="assets/s2.jpg" alt="Gallery Image 2" class="gallery-img">
+    <img src="assets/s3.jpg" alt="Gallery Image 3" class="gallery-img">
+    <img src="assets/s4.jpg" alt="Gallery Image 4" class="gallery-img">
+    <img src="assets/s5.jpg" alt="Gallery Image 5" class="gallery-img">
+    <img src="assets/s6.jpg" alt="Gallery Image 6" class="gallery-img">
+    <img src="assets/s7.jpg" alt="Gallery Image 7" class="gallery-img">
+    <img src="assets/s8.jpg" alt="Gallery Image 8" class="gallery-img">
+    <img src="assets/s9.jpg" alt="Gallery Image 9" class="gallery-img">
+  </div>
+</section>
+
+
+  <section class="py-14 px-4 bg-pink-50 text-center fade-in">
+    <h3 class="text-2xl font-medium text-pink-600">Tertarik dengan produk kami?</h3>
+    <p class="text-pink-500 mt-3 max-w-xl mx-auto">Jika kamu tertarik dengan produk kami, jangan ragu untuk menghubungi kami. 
+        Kami siap membantu Anda dalam memilih produk yang sesuai dengan gaya dan kebutuhan Anda.</p>
+   <a href="https://www.instagram.com/dwmpybeads_" target="_blank" rel="noopener noreferrer">
+  <button class="mt-6 bg-pink-300 text-white px-5 py-3 rounded-full hover:bg-pink-400 transition">
+    Hubungi Sekarang
+  </button>
+</a>
+
+  </section>
+
+  <footer class="bg-pink-200 text-center p-8 mt-14 rounded-t-3xl fade-in">
+    <p class="text-pink-800 text-xl font-semibold">Gaya Baru dari Pergelangan Tanganmu</p>
+    <div class="mt-6 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12 text-pink-700">
+      <div class="hover-bounce">
+        <h5 class="font-bold">Custom</h5>
+        <p>Bisa request sesuai keinginan kalian</p>
+      </div>
+      <div class="hover-bounce">
+        <h5 class="font-bold">Affordable</h5>
+        <p>Harga bersahabat untuk semua kalangan</p>
+      </div>
+      <div class="hover-bounce">
+        <h5 class="font-bold">Handmade</h5>
+        <p>Dibuat langsung oleh tangan kreatif</p>
+      </div>
+    </div>
+    <p class="mt-6 text-sm">&copy; 2025 dwmpybeads</p>
+  </footer>
+
+  <div id="lightboxModal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-50">
+  <div class="relative max-w-3xl mx-auto">
+    <button onclick="closeModal()" class="absolute top-0 right-0 text-white text-3xl px-4 py-2">&times;</button>
+    <img id="lightboxImg" src="" class="rounded-xl shadow-lg max-h-[80vh] mx-auto">
+  </div>
+</div>
+
+<script>
+  const galleryImages = document.querySelectorAll('.gallery-img');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  galleryImages.forEach(img => observer.observe(img));
+</script>
+
+</body>
+</html>

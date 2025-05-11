@@ -5,48 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>dwmpybeads</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-  <style>
-    body { font-family: 'Segoe UI', sans-serif; }
-    .gradient-bg {
-      background: linear-gradient(to bottom right, #fce4ec, #e0f7fa);
-    }
-    .fade-in {
-      animation: fadeIn 2s ease-in-out;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(20px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .hover-bounce:hover {
-      transform: scale(1.05);
-      transition: transform 0.3s ease-in-out;
-    }
-    .gallery-img {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-      border-radius: 0.75rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    }
-    .gallery-img.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-pink-50 text-gray-700">
 
+  <!-- Header -->
   <section class="gradient-bg p-10 text-center rounded-b-3xl shadow-lg fade-in">
     <h1 class="text-5xl font-extrabold text-pink-700 tracking-wide animate-bounce">dwmpybeads</h1>
-    <p class="text-xl mt-2 text-pink-600 italic">Custom Beaded Bracelets to Match Your Vibe</p>
+    <p class="text-xl mt-2 text-pink-600 italic typewriter">Custom Beaded Bracelets to Match Your Vibe</p>
   </section>
 
-  <section class="py-14 px-4 text-center fade-in">
+  <!-- About -->
+   <section class="py-14 px-4 text-center fade-in">
     <h2 class="text-3xl font-bold text-pink-700">Gelang Aksesoris Unik Buat Kamu yang Spesial</h2>
     <p class="mt-4 text-pink-500 max-w-2xl mx-auto">Gelang buatan tangan yang bisa dicustom sesuai dengan karakter kamu.
         Hadiah yang tepat untuk sahabat, pasangan, atau diri sendiri.</p>
   </section>
 
+  <!-- Product -->
   <section class="py-14 px-6 bg-white">
     <h3 class="text-center text-2xl font-semibold text-pink-600 mb-8">Produk Kami</h3>
     <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -98,6 +74,46 @@
     </div>
   </section>
 
+  <!-- Testimoni -->
+  <section class="py-14 px-6 bg-pink-100 text-center fade-in">
+    <h3 class="text-2xl font-bold text-pink-700 mb-8">Apa Kata Mereka</h3>
+    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div class="bg-white rounded-xl shadow-md p-5">
+        <p class="text-gray-600 italic">“Gelangnya lucu banget dan pengirimannya cepat! Cocok banget buat hadiah.”</p>
+        <p class="mt-3 text-pink-600 font-semibold">– Amanda</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-5">
+        <p class="text-gray-600 italic">“Suka banget sama desainnya yang bisa dicustom. Pelayanan ramah juga.”</p>
+        <p class="mt-3 text-pink-600 font-semibold">– Rani</p>
+      </div>
+      <div class="bg-white rounded-xl shadow-md p-5">
+        <p class="text-gray-600 italic">“Pakai gelang ini bikin outfit makin manis. Thank you dwmpybeads!”</p>
+        <p class="mt-3 text-pink-600 font-semibold">– Tiara</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-14 px-6 bg-white fade-in">
+    <h3 class="text-2xl font-bold text-pink-700 text-center mb-8">Pertanyaan Umum</h3>
+    <div class="max-w-3xl mx-auto space-y-6">
+      <div>
+        <h4 class="font-semibold text-pink-600">Apakah bisa custom nama atau warna?</h4>
+        <p class="text-gray-600">Tentu! Kamu bisa request desain sesuai keinginan lewat DM Instagram atau WhatsApp kami.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-pink-600">Berapa lama pengiriman?</h4>
+        <p class="text-gray-600">Proses produksi 1–3 hari. Setelah itu, dikirim sesuai jasa ekspedisi pilihanmu.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold text-pink-600">Apakah bisa order banyak untuk souvenir?</h4>
+        <p class="text-gray-600">Bisa banget! Kami menerima pesanan dalam jumlah besar untuk acara spesial.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact -->
   <section class="py-14 px-4 bg-pink-50 text-center fade-in">
     <h3 class="text-2xl font-medium text-pink-600">Tertarik dengan produk kami?</h3>
     <p class="text-pink-500 mt-3 max-w-xl mx-auto">Jika kamu tertarik dengan produk kami, jangan ragu untuk menghubungi kami. Kami siap membantu memilih produk yang sesuai dengan gayamu.</p>
@@ -106,6 +122,7 @@
     </a>
   </section>
 
+<!-- Footer -->
   <footer class="bg-pink-200 text-center p-8 mt-14 rounded-t-3xl fade-in">
     <p class="text-pink-800 text-xl font-semibold">Gaya Baru dari Pergelangan Tanganmu</p>
     <div class="mt-6 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12 text-pink-700">
@@ -125,7 +142,7 @@
     <p class="mt-6 text-sm">&copy; 2025 dwmpybeads</p>
   </footer>
 
-  <!-- Modal Produk -->
+  <!-- Modal -->
   <div id="productModal" class="fixed inset-0 bg-black bg-opacity-70 hidden items-center justify-center z-50">
     <div class="bg-white rounded-xl shadow-xl p-6 max-w-md w-full mx-4 relative">
       <button onclick="closeModal()" class="absolute top-2 right-3 text-xl text-pink-600">&times;</button>
@@ -136,38 +153,15 @@
     </div>
   </div>
 
-  <script>
-    const galleryImages = document.querySelectorAll('.gallery-img');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    galleryImages.forEach(img => observer.observe(img));
+  <!-- Back to Top Button -->
+  <button onclick="scrollToTop()" id="backToTopBtn" title="Kembali ke Atas">↑</button>
 
-    const modal = document.getElementById('productModal');
-    const modalImg = document.getElementById('modalImg');
-    const modalTitle = document.getElementById('modalTitle');
-    const modalDesc = document.getElementById('modalDesc');
-    const modalPrice = document.getElementById('modalPrice');
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/6281234567890" target="_blank" class="fixed bottom-5 left-5 bg-green-500 text-white px-4 py-2 rounded-full shadow-lg animate-bounce hover:bg-green-600 z-50">
+    Chat WhatsApp
+  </a>
 
-    function showModal(imageSrc, title, desc, price) {
-      modalImg.src = imageSrc;
-      modalTitle.textContent = title;
-      modalDesc.textContent = desc;
-      modalPrice.textContent = price;
-      modal.classList.remove('hidden');
-      modal.classList.add('flex');
-    }
-
-    function closeModal() {
-      modal.classList.add('hidden');
-      modal.classList.remove('flex');
-    }
-  </script>
+  <script src="script.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,62 @@
+  body { font-family: 'Segoe UI', sans-serif; }
+    .gradient-bg {
+      background: linear-gradient(to bottom right, #fce4ec, #e0f7fa);
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .hover-bounce:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+    .gallery-img {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+      border-radius: 0.75rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+    .gallery-img.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .gallery-img img:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease-in-out;
+    }
+    .typewriter {
+      overflow: hidden;
+      border-right: .15em solid #f06292;
+      white-space: nowrap;
+      animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+      display: inline-block;
+      max-width: 100%;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: #f06292; }
+    }
+    #backToTopBtn {
+      position: fixed;
+      bottom: 40px;
+      right: 20px;
+      background-color: #ec4899;
+      color: white;
+      padding: 10px 14px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      z-index: 999;
+      display: none;
+    }
+    #backToTopBtn:hover {
+      background-color: #db2777;
+    }
